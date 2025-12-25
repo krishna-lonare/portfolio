@@ -2,16 +2,10 @@ body {
     margin:0px;
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
+    
 }
 
-header {
-    background-color: #364492;
-    color: rgb(255, 255, 255);
-    padding:1px;
-    height: 48px; 
-    padding-left:55px;
-    padding-top:5px;   
-}
+
 
 section {
     background: rgb(183, 219, 240);
@@ -52,11 +46,56 @@ footer {
 }
 
 
-header h1 {
-    
-    font-weight: 600;
-    letter-spacing: 1px;
-    margin: 0;
-    align-items: center;
-    font-family :'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  background-color: #000000;
+  color: #f4f4f4;
+}
+
+/* Equal sections */
+.left, .center, .right {
+  flex: 1;
+}
+
+/* LEFT: horizontal split */
+.left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 20px;
+}
+
+/* SVG fixed width */
+.logo-icon {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.logo-icon svg {
+  width: 100%;
+  height: 100%;
+  
+}
+
+/* Center name */
+.center {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* Right menu */
+.right {
+  text-align:center;
+  padding-right: 20px;
+}
+.logo-icon svg circle {
+  fill: rgb(135, 116, 243);
 }
